@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="styles.css">
+
+<html>
+    wtf
+    <head>
+        <h1> Расписание </h1>
+    </head>
+    <body>
+
+<div class = "container">
+<div class="style1">
+<form id="kvest">
+  <label>
+    Введите название мероприятия
+    <input type="name" placeholder="Ваше занятие">
+  </label>
+</form>
+
+
+<label for="time_s">Время начала:</label>
+
+<input
+  type="datetime-local"
+  id="time_s"
+  name="time_s"
+  value="2024-10-26T19:30"
+  min="2024-10-26T19:30"
+  max="2024-12-31T23:59" />
+
+<br>
+
+<label for="time_e">Время окончания:</label>
+
+<input
+  type="datetime-local"
+  id="time_e"
+  name="time_e"
+  value="2024-12-31T23:59"
+  min="2024-10-26T19:30"
+  max="2024-12-31T23:59" />
+
+<br>
+
+<button type="submit" form="login">Добавить планируемое занятие</button>
+</div>
+
+<div class = "style1">
+	<form id="kvest">
+  <label>
+    Введите название задания
+    <input type="name" placeholder="Ваша цель">
+  </label>
+</form>
+
+
+<label for="time_choise">Требуемое для выполнения время (часов):</label>
+<input list="action_length" id="time_choice" name="time_choice" />
+
+<datalist id="action_length">
+  <option value="1"></option>
+  <option value="2"></option>
+  <option value="3"></option>
+  <option value="4"></option>
+  <option value="5"></option>
+</datalist>
+
+<br>
+<label for="deadline">Дэдлайн:</label>
+
+<input
+  type="datetime-local"
+  id="deadline"
+  name="deadline"
+  value="2024-12-31T23:59"
+  min="2024-10-26T19:30"
+  max="2024-12-31T23:59" />
+
+<br>
+<button type="submit" form="login">Добавить дэдлайн</button>
+
+</div>
+</div>
+
+<br>
+        <table class="table" border="1">
+	    <thead>
+		<tr>
+		    <th> Время </th>
+		    <th> Понедельник </th>
+		    <th> Вторник </th>
+		    <th> Среда </th>
+		    <th> Четверг </th>
+		    <th> Пятница </th>
+		    <th> Суббота </th>
+		    <th> Воскресенье </th>
+		</tr>
+	    </thead>
+	    <tbody>
+
+
+		<tr>
+		    <th> Утро </th>
+		    <th> </th>
+		    <th> </th>
+		    <th> </th>
+		    <th> </th>
+		    <th> </th>
+		    <th> </th>
+		    <th> </th>
+		</tr>
+		<tr>
+		    <th> День </th>
+		    <th> </th>
+		    <th> </th>
+		    <th> </th>
+		    <th> </th>
+		    <th> </th>
+		    <th> </th>
+		    <th> </th>
+		</tr>
+		<tr>
+		    <th> Вечер </th>
+		    <th> </th>
+		    <th> </th>
+		    <th> </th>
+		    <th> </th>
+		    <th> </th>
+		    <th> </th>
+		    <th> </th>
+		</tr>
+	    </tbody>
+	</table>
+	<a href="#top"> Вверх </a>
+    </body>
+</html>
+
+
+<style>
+	.style1 {
+  width: 20em;
+  border: 1px solid #333;
+  box-shadow: 8px 8px 5px #444;
+  padding: 8px 12px;
+  background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
+}
+	.container {
+  display: flex;
+  justify-content: space-evenly; /* Магия равномерного распределения */
+}
+
+	table{
+  width: 300px;
+  text-align: justify;
+  margin: auto; /* Выравниваем таблицу по центру окна  */
+
+}
+</style>
